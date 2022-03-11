@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Create argos.deb",
+        "type": "shell",
+        "command": [
+          "rm -rf build &&",
+          "mkdir build && cd build &&",
+          "cmake -DCPACK_BINARY_DEB=1 -DCMAKE_BUILD_TYPE=Debug -DARGOS_BUILD_FOR=simulator -DARGOS_THREADSAFE_LOG=ON -DARGOS_DYNAMIC_LOADING=ON ../src &&",
+          "make doc && make && make package"
+        ]
+      },
+    ]
+}

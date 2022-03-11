@@ -1,0 +1,7 @@
+{
+	"name": "INF3995 - Dream Team",
+	"dockerFile": "./Dockerfile",
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "zsh"
+	},
+}
