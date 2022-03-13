@@ -157,7 +157,7 @@ namespace argos {
          /* RAB equipped entity */
          Real fRABRange = 3.0f;
          GetNodeAttributeOrDefault(t_tree, "rab_range", fRABRange, fRABRange);
-         UInt32 unRABDataSize = 10;
+         UInt32 unRABDataSize = 12;
          GetNodeAttributeOrDefault(t_tree, "rab_data_size", unRABDataSize, unRABDataSize);
          SAnchor& cRABAnchor = m_pcEmbodiedEntity->AddAnchor("rab", CVector3(0.0f, 0.0f, RAB_ELEVATION));
          m_pcRABEquippedEntity = new CRABEquippedEntity(
