@@ -4,4 +4,15 @@
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "zsh"
 	},
+  "runArgs": [
+	  "--privileged",
+		"--net=host",
+		"--device=/dev/bus/usb/",
+		"--name=embedded",
+		// "--gpus=all", //Uncomment to use NVDIA GPU
+		"-e",
+		"DISPLAY=${env:DISPLAY}",
+		"--device-cgroup-rule=a 166:* rwm",
+		"--device-cgroup-rule=a 189:* rwm"
+	]
 }
